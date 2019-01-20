@@ -1,0 +1,191 @@
+body{
+    padding-bottom: 100px;
+}
+header{
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/vidraru.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    position: relative;
+    background-attachment: fixed;
+    background-position: 0px -250px;
+}
+.navbar{
+    background: #000 !important;
+    padding: 10px;
+    border: none !important;
+    box-shadow: 0px 2px 5px rgba(255,255,255,0.5);
+    border-radius: 0px !important;
+}
+header ul.nav li a{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold
+}
+.navbar-brand{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header ul.nav li{
+    transition: background .3s ease-in;
+    margin-left: 5px;
+}
+header ul.nav li:hover,
+.activ{
+    background: #fff !important;
+}
+header ul.nav li:hover a,
+header ul.nav li.activ a{
+    color: #000 !important;
+}
+
+#header-text span{
+    display: block;
+    font-size: 80px;
+    color: #fff;
+}
+#header-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+main{
+    border: 3px solid #eaeaea;
+    border-top: none;
+    padding: 35px;
+    background: #fff;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body{
+    background: #f1f1f1 !important;
+    font-family: 'OpenSans';
+}
+article h3{
+    font-family: 'OpenSans';
+    font-size: 40px;
+}
+article{
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+.button{
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #000;
+    border: 2px solid #000;
+    background: #f1f1f1;
+    margin: 20px auto;
+    transition: background .3s ease, color .4s ease-in;
+}
+.button:hover{
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.title{
+    font-family: 'OpenSans';
+    font-size: 40px;
+    margin: 50px 0 50px 0;
+    text-decoration: underline;   
+}
+.panel-heading ul.nav li{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 33%;
+}
+.panel-heading ul.nav li.active a,
+.panel-heading ul.nav li:hover a{
+    background: #333 !important;
+    color: #fff !important;
+}
+.panel-heading ul.nav li a{
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #000;
+    transition: background .3s ease, color .4s ease-in;
+}
+.panel-info > .panel-heading{
+    background: #f1f1f1 !important;
+}
+.panel{
+    border: 2px solid #ccc !important;
+}
+.img-thumbnail{
+    border: 2px solid #333 !important;
+}
+.small-title{
+    font-family: 'OpenSans';
+    text-decoration:underline;
+    font-size: 25px;
+}
+#tipuri,
+#barajeRo,
+#galerie,
+footer{
+    margin-top: 50px;
+    border-top: 2px dashed #333;
+}
+.gal-item{
+   text-align: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.gal-item:target{
+    visibility: visible;
+    opacity: 1;
+}
+.item{
+    display: block;
+    overflow: hidden;
+    margin: 15px 0;
+    background: #ccc;
+}
+.item img{
+    transition: transform 1s ease, filter .3s ease, opacity .4s ease;
+    height: 280px;
+}
+
+.item:hover img{
+    transform: scale(1.1) rotate(360deg);
+    filter: blur(1px);
+    opacity: 0.7;
+}
+.gal-item img{
+    max-width: 90%;
+    margin-top: 2%;
+    max-height: 90%;
+}
+#top{
+    margin-top: 50px;
+}
+#top h3{
+    font-size: 30px;
+}
+.contact-credits{
+    margin-top: 50px;
+    font-weight: bold;
+}

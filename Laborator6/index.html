@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function reverseString(str){
+            var sir = "";
+            for(var i =str.length -1; i >=0; i--)
+            {
+                sir += str[i];
+            }
+            return sir;
+        }
+        function removeString(word,pos){
+            var newStr = word.substring(0,pos - 1) + word.substring(pos, word.length);
+            return newStr;
+        }
+        console.log(reverseString("12345"));
+        console.log(removeString("drink",2));
+    </script>
+    
+</body>
+</html>
